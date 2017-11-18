@@ -39,7 +39,7 @@ panHeader = (lastTime, currentPan) ->
 
 $(document).ready ->
     initHeader()
-    panHeader(Date.now(), -3300)
+    panHeader(Date.now(), -3800)
 
     $('.current-year').text(new Date().getFullYear())
 

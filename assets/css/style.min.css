@@ -6221,23 +6221,23 @@ hr {
 }
 #backgrounds #near-bg {
   z-index: 4;
-  background-image: url(../img/sm-bg_near.png);
+  background-image: url(../img/header/sm-bg_near.png);
 }
 #backgrounds #far-bg {
   top: -60px;
   z-index: 3;
-  background-image: url(../img/sm-bg_far.png);
+  background-image: url(../img/header/sm-bg_far.png);
 }
 #backgrounds #sky-bg {
   top: -50px;
   z-index: 1;
-  background-image: url(../img/sm-bg.png);
+  background-image: url(../img/header/sm-bg.png);
 }
 #backgrounds #page-header-logo {
   z-index: 2;
   top: 20%;
   height: 80%;
-  background-image: url(../img/DS_Logo.png);
+  background-image: url(../img/header/DS_Logo.png);
   background-size: 75% auto;
   background-position: center center;
   background-repeat: no-repeat;
@@ -6514,15 +6514,12 @@ footer {
     right: 5%;
   }
   #backgrounds #near-bg {
-    z-index: 3;
-    background-image: url(../img/orig/bg_near.png);
+    background-image: url(../img/header/bg_near.png);
   }
   #backgrounds #far-bg {
-    z-index: 2;
-    background-image: url(../img/orig/bg_far.png);
+    background-image: url(../img/header/bg_far.png);
   }
   #backgrounds #sky-bg {
-    z-index: 1;
-    background-image: url(../img/orig/bg.png);
+    background-image: url(../img/header/bg.png);
   }
 }
