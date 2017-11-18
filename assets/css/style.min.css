@@ -6329,6 +6329,8 @@ hr {
   background-image: url("../img/about-bg.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   -webkit-box-shadow: inset 0 0 50px 10px #00001c;
   box-shadow: inset 0 0 50px 10px #00001c;
 }
@@ -6352,6 +6354,8 @@ hr {
   background-image: url("../img/contact-bg.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   -webkit-box-shadow: inset 0 0 50px 10px #00001c;
   box-shadow: inset 0 0 50px 10px #00001c;
 }
