@@ -27,10 +27,10 @@ module.exports = (grunt) ->
 
         uglify:
             main:
-                options:
-                    beautify: true
-                    preserveComments: true
-                    mangle: false
+                # options:
+                #     beautify: true
+                #     preserveComments: true
+                #     mangle: false
                 files:
                     'assets/js/scripts.min.js': [
                         'vendor/bower/jquery/dist/jquery.js'
@@ -52,12 +52,6 @@ module.exports = (grunt) ->
                         'vendor/bower/bootstrap/js/tab.js'
                         'vendor/bower/bootstrap/js/affix.js'
 
-                        # 'vendor/bower/stellar/jquery.stellar.js'
-                        # 'vendor/bower/jquery-waypoints/waypoints.js'
-                        # 'vendor/bower/smooth-scroll.js/smooth-scroll.js'
-                        # 'vendor/bower/fancybox/source/jquery.fancybox.js'
-                        # 'vendor/bower/appear/jquery.appear.js'
-                        # 'vendor/bower/jail/dist/jail.min.js'
                         'assets/js/parallaxit.js'
                         'dist/assets/js/*.js'
                     ]
