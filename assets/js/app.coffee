@@ -41,6 +41,8 @@ $(document).ready ->
     initHeader()
     panHeader(Date.now(), -2800)
 
+    $('.current-year').text(new Date().getFullYear())
+
     $('#show-gifs').click (e) ->
         e.preventDefault()
         $('#gif').removeClass 'hidden'

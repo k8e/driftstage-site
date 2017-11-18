@@ -6324,15 +6324,36 @@ hr {
   }
 }
 .about-descript {
+  border: solid #fff;
+  border-width: 5px 0;
+  background-image: url("../img/about-bg.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: inset 0 0 50px 10px #00001c;
+  box-shadow: inset 0 0 50px 10px #00001c;
+}
+.about-text {
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: lighter;
   font-size: 135%;
 }
-.about-descript h5 {
+.about-text h5 {
+  font-family: "TargaMS", "Roboto Condensed", Helvetica, Arial, sans-serif;
+  color: #ee2364;
+  text-transform: uppercase;
   font-size: 140%;
-  font-style: italic;
-  font-weight: normal;
+}
+.contact-row {
+  border: solid #fff;
+  border-width: 5px 0;
+  background-image: url("../img/contact-bg.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: inset 0 0 50px 10px #00001c;
+  box-shadow: inset 0 0 50px 10px #00001c;
 }
 #platforms {
   display: inline-block;
@@ -6370,7 +6391,7 @@ hr {
   max-width: 371px;
   height: 0;
   padding-top: 140.9703504%;
-  padding-top: 0;
+  background-position: center;
 }
 @media screen and (min-width: 471px) {
   #keys {
@@ -6468,6 +6489,9 @@ footer {
 }
 .row-buffer {
   margin-top: 15px;
+}
+.row-buffer-big {
+  margin-top: 120px;
 }
 @media (min-width: 768px) {
   #backgrounds > div {
