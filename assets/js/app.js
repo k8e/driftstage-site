@@ -8,14 +8,6 @@
         responsive: true
       });
     }
-    WebFont.load({
-      google: {
-        families: ['Roboto Condensed:300,400,700']
-      },
-      active: function() {
-        return $('.slabbed').slabText();
-      }
-    });
     $('#show-gifs').click(function(e) {
       e.preventDefault();
       $('#gif').removeClass('hidden');

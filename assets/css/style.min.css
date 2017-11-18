@@ -6163,24 +6163,6 @@ button.close {
     display: none !important;
   }
 }
-.slabtexted .slabtext {
-  display: -moz-inline-box;
-  display: inline-block;
-  white-space: nowrap;
-}
-.slabtextinactive .slabtext {
-  display: inline;
-  white-space: normal;
-  font-size: 1em !important;
-  letter-spacing: inherit !important;
-  word-spacing: inherit !important;
-  *letter-spacing: 0 !important;
-  *word-spacing: 0 !important;
-}
-.slabtextdone .slabtext {
-  display: block;
-  line-height: 0.9;
-}
 @font-face {
   font-family: "Targa";
   src: url("../fonts/Targa.ttf") format("truetype");
@@ -6233,8 +6215,8 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-repeat: repeat-x;
   background-size: cover;
 }
 #backgrounds #near-bg {
@@ -6242,18 +6224,26 @@ hr {
   background-image: url(../img/sm-bg_near.png);
 }
 #backgrounds #far-bg {
+  top: -60px;
   z-index: 3;
   background-image: url(../img/sm-bg_far.png);
 }
 #backgrounds #sky-bg {
+  top: -50px;
   z-index: 1;
   background-image: url(../img/sm-bg.png);
 }
 #backgrounds #page-header-logo {
   z-index: 2;
+  top: 20%;
+  height: 80%;
   background-image: url(../img/DS_Logo.png);
   background-size: 75% auto;
   background-position: center center;
+  background-repeat: no-repeat;
+}
+#backgrounds #header-trailer {
+  display: none;
 }
 #backgrounds #blank-bg {
   z-index: 5;
@@ -6334,6 +6324,7 @@ hr {
   }
 }
 .about-descript {
+  text-align: center;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: lighter;
   font-size: 135%;
@@ -6379,6 +6370,7 @@ hr {
   max-width: 371px;
   height: 0;
   padding-top: 140.9703504%;
+  padding-top: 0;
 }
 @media screen and (min-width: 471px) {
   #keys {
@@ -6422,9 +6414,9 @@ video {
   /* 16:9 */
   padding-top: 25px;
   height: 0;
-  border: 1px solid #000;
-  -webkit-box-shadow: 5px 5px 0 #000000;
-  box-shadow: 5px 5px 0 #000000;
+  border: 5px solid #ff0055;
+  -webkit-box-shadow: 5px 5px 0 0 #1c0059;
+  box-shadow: 5px 5px 0 0 #1c0059;
 }
 .video-embed-wrapper iframe {
   position: absolute;
@@ -6460,23 +6452,49 @@ footer {
     padding-top: 39.85239852px;
   }
 }
+.purple {
+  position: relative;
+}
+.purple::before,
+.purple::after {
+  content: "";
+  position: absolute;
+  background: #663399;
+  /* Match the background */
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+  /* some huge width */
+}
 .row-buffer {
   margin-top: 15px;
 }
 @media (min-width: 768px) {
-  #backgrounds {
-    position: fixed;
+  #backgrounds > div {
+    background-size: 50% 100%;
+  }
+  #backgrounds #page-header-logo {
+    background-size: 40% auto;
+    background-position: 10% center;
+  }
+  #backgrounds #header-trailer {
+    z-index: 5;
+    display: block;
+    width: 40%;
+    height: 85%;
+    top: 15%;
+    right: 5%;
   }
   #backgrounds #near-bg {
     z-index: 3;
-    background-image: url(../img/bg_near.png);
+    background-image: url(../img/orig/bg_near.png);
   }
   #backgrounds #far-bg {
     z-index: 2;
-    background-image: url(../img/bg_far.png);
+    background-image: url(../img/orig/bg_far.png);
   }
   #backgrounds #sky-bg {
     z-index: 1;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/orig/bg.png);
   }
 }

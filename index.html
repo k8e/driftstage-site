@@ -32,14 +32,19 @@
     <![endif]-->
 </head>
 <body>
-    <div id="backgrounds">
-        <div id="near-bg" data-stellar-ratio="2.0" data-stellar-horizontal-offset="0"></div>
-        <div id="far-bg" data-stellar-ratio="1.8" data-stellar-vertical-offset="50"></div>
-        <div id="sky-bg" data-stellar-ratio="1.6" data-stellar-horizontal-offset="0"></div>
-        <div id="blank-bg" data-stellar-ratio="2.0" data-stellar-horizontal-offset="0"></div>
-        <div id="page-header-logo" data-stellar-ratio="1.4" data-stellar-horizontal-offset="0"></div>
-    </div>
     <div id="content">
+        <div id="backgrounds">
+            <!-- <div id="blank-bg" data-type="background" data-speed="-10"></div> -->
+            <div id="near-bg"></div>
+            <div id="far-bg" data-type="background" data-speed="-5"></div>
+            <div id="sky-bg" data-type="background" data-speed="-15"></div>
+            <div id="page-header-logo" data-type="background" data-speed="2"></div>
+            <div id="header-trailer">
+                <div class="video-embed-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ESM4JkOXSis?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
         <div id="page-header" class="jumbotron">
             <div class="container">
                 <!-- <div class="row">
@@ -62,63 +67,70 @@
             </div>
         </div>
 
-        <div id="main" class="container">
+        <div id="main" class="container-fluid">
 
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <div class="row" style="margin-top: 20px;">
-                        <div class="col-sm-12">
-                            <div class="video-embed-wrapper">
-                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ESM4JkOXSis?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>   
-                </div>    
-            </div>
-
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <div id="about">
-                        <div class="row row-buffer">
+            <div class="container">
+                <div class="row visible-xs-block">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row" style="margin-top: 20px;">
                             <div class="col-sm-12">
-                                <h3>Drift Stage</h3>
-                                <h4>Available Now On</h4>
-                            </div>
-                        </div>
-                        <div class="row row-buffer">
-                            <div class="col-sm-12">
-                                <div id="platforms"></div>
-                            </div>
-                        </div>
-                        <div class="row row-buffer">
-                            <div class="col-sm-12">
-                                <div id="price">$15.00</div>
-                            </div>
-                        </div>
-                        <div class="row row-buffer">
-                            <div class="col-sm-12">
-                                <div id="about-header"></div>
-                            </div>
-                        </div>
-                        <div class="row row-buffer">
-                            <div class="col-sm-12">
-                                <div class="about-descript">
-                                    <h5>The arcade racer is back.</h5>
-                                    <p>With 16 finely tuned exotic cars to choose from, three tailor made race tracks, and a soundtrack by legendary soft-shredder Hugh Myrone, Drift Stage brings the elements of the arcade racer back with its unique and intiutive drift based gameplay.</p>
-                                    <p>Drift Stage will please your senses with its tight controls and gratifying low-spec aesthetics; so jump in and get ready - You just got handed the keys.</p>
+                                <div class="video-embed-wrapper">
+                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ESM4JkOXSis?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                                 </div>
                             </div>
+                        </div>   
+                    </div>    
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="about">
+                            <div class="row row-buffer">
+                                <div class="col-sm-12">
+                                    <h3>Drift Stage</h3>
+                                    <h4>Available Now On</h4>
+                                </div>
+                            </div>
+                            <div class="row row-buffer">
+                                <div class="col-sm-12">
+                                    <div id="platforms"></div>
+                                </div>
+                            </div>
+                            <div class="row row-buffer">
+                                <div class="col-sm-12">
+                                    <div id="price">$15.00</div>
+                                </div>
+                            </div>
+                            <!-- <div class="row row-buffer">
+                                <div class="col-sm-12">
+                                    <div id="about-header"></div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <hr />
-                    <div id="keys"></div>
+            <div class="row" style="background: blue;">
+                <div class="container">
+                    <div class="col-sm-3">
+                        <div id="keys"></div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="about-descript">
+                            <h5>The arcade racer is back.</h5>
+                            <p>Jump into the exotic car of your choice and tear up the asphalt in the neon-infused and blue sky locales that Drift Stage drivers call home. With a soundtrack by legendary soft-shredder Hugh Myrone, Drift Stage brings the arcade racer back with unique and intiutive drift mechanics and fluid high-speed racing.</p>
+                            <p>Drift Stage will please your senses with its tight controls and gratifying low-spec aesthetics; so jump in and get ready - You just got handed the keys.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <hr />
+                </div>
+            </div> -->
 
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">

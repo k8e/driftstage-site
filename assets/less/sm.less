@@ -1,18 +1,35 @@
-#backgrounds {		
-    position: fixed;		
+#backgrounds {
+
+    &>div {
+        background-size: 50% 100%;
+    }
+
+    #page-header-logo {
+        background-size: 40% auto;
+        background-position: 10% center;
+    }
+
+    #header-trailer {
+        z-index: 5;
+        display: block;
+        width: 40%;
+        height: 85%;
+        top: 15%;
+        right: 5%;
+    }
     
     #near-bg {		
         z-index: 3;		
-        background-image: url(../img/bg_near.png);		
+        background-image: url(../img/orig/bg_near.png);		
     }		
     
     #far-bg {		
         z-index: 2;		
-        background-image: url(../img/bg_far.png);		
+        background-image: url(../img/orig/bg_far.png);		
     }		
     
     #sky-bg {		
         z-index: 1;		
-        background-image: url(../img/bg.png);		
+        background-image: url(../img/orig/bg.png);	
     }		
 }

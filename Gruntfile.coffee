@@ -27,10 +27,10 @@ module.exports = (grunt) ->
 
         uglify:
             main:
-                # options:
-                    # beautify: true
-                    # preserveComments: true
-                    # mangle: false
+                options:
+                    beautify: true
+                    preserveComments: true
+                    mangle: false
                 files:
                     'assets/js/scripts.min.js': [
                         'vendor/bower/jquery/dist/jquery.js'
@@ -52,22 +52,13 @@ module.exports = (grunt) ->
                         'vendor/bower/bootstrap/js/tab.js'
                         'vendor/bower/bootstrap/js/affix.js'
 
-                        'vendor/bower/stellar/jquery.stellar.js'
-
+                        # 'vendor/bower/stellar/jquery.stellar.js'
                         # 'vendor/bower/jquery-waypoints/waypoints.js'
-
-                        'vendor/bower/slabText/js/jquery.slabtext.js'
-
                         # 'vendor/bower/smooth-scroll.js/smooth-scroll.js'
-
                         # 'vendor/bower/fancybox/source/jquery.fancybox.js'
-
                         # 'vendor/bower/appear/jquery.appear.js'
-
                         # 'vendor/bower/jail/dist/jail.min.js'
-
-                        # 'assets/js/jquery.parallax-1.1.3.js'
-
+                        'assets/js/parallaxit.js'
                         'dist/assets/js/*.js'
                     ]
 
@@ -84,6 +75,12 @@ module.exports = (grunt) ->
                 files: ['assets/js/*']
                 tasks: ['clean:js', 'coffee', 'uglify']
 
+        connect:
+            server:
+                options:
+                    port: 9001
+                    base: './'
+
     grunt.loadNpmTasks 'grunt-contrib-clean'
     grunt.loadNpmTasks 'grunt-contrib-uglify'
     grunt.loadNpmTasks 'grunt-contrib-copy'
@@ -91,6 +88,7 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-less'
     grunt.loadNpmTasks 'grunt-contrib-watch'
     grunt.loadNpmTasks 'grunt-contrib-compress'
+    grunt.loadNpmTasks 'grunt-contrib-connect'
 
 
     grunt.registerTask 'default', [
@@ -98,5 +96,5 @@ module.exports = (grunt) ->
     ]
 
     grunt.registerTask 'dev', [
-        'clean:all', 'coffee', 'uglify', 'less', 'watch'
+        'clean:all', 'coffee', 'uglify', 'less', 'connect', 'watch'
     ]
