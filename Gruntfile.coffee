@@ -66,7 +66,7 @@ module.exports = (grunt) ->
             options:
                 livereload: true
             less:
-                files: ['assets/css/*', 'assets/less/*']
+                files: ['assets/less/*']
                 tasks: ['less']
             copy:
                 files: ['*.html', 'assets/img/*', 'assets/img/**/*', 'assets/font/*']
