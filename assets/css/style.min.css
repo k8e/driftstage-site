@@ -6450,10 +6450,20 @@ video {
   width: 100%;
   height: 100%;
 }
+#cars {
+  height: 75px;
+  width: 100%;
+  position: relative;
+}
 #cars img {
   border: 0;
   box-shadow: none;
   margin: 0 10px;
+}
+#cars .car {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 footer {
   text-align: center;
