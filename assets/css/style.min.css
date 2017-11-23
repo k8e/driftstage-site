@@ -6528,3 +6528,9 @@ footer {
   
 
 }
+   #cars {
+	box-shadow: 0px 0px black;   
+	-webkit-box-shadow: 0px 0x black; 
+    border: 0px solid;
+	border: 0;
+  }
