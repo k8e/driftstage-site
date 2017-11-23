@@ -1572,8 +1572,11 @@ pre code {
     float: left;
   }
   .col-sm-12 {
-    width: 100%;
+    
+	width: 100%;
   }
+  
+ 
   .col-sm-11 {
     width: 91.66666667%;
   }
@@ -6522,4 +6525,6 @@ footer {
   #backgrounds #sky-bg {
     background-image: url(../img/header/bg.png);
   }
+  
+
 }
