@@ -65,5 +65,5 @@ var photoPost = function(imgUrl, timestamp, link) {
 function formatTimeStamp(utcSeconds) {
     var date = new Date(0);
     date.setUTCSeconds(utcSeconds);
-    return date.getMonth() + "/" + date.getDay() + "/" + date.getFullYear();
+    return (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
 }
