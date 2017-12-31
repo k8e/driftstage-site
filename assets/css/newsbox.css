@@ -1,0 +1,82 @@
+.newsbox-container {
+    margin: 20px 0;
+    box-shadow: 5px 5px 0 0 #1c0059;
+}
+
+.news-header-text {
+    background-image: url('../img/news_white.png');
+    position: absolute;
+    height: 38px;
+    width: 142px;
+    top: -8px;
+    left: 13px;
+}
+
+.newsbox-header {
+    height: 20px;
+    width: 100%;    
+    background-color: #000000;
+    color: #FFFFFF;
+    position: relative;
+}
+
+#newsbox {
+    height: 100px;    
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #FF0055;
+    font-size: small;
+    font-family: "TargaMS", "Roboto Condensed", Helvetica, Arial, sans-serif;    
+    color: #FFFFFF;
+}
+
+#newsbox ul.tumblr-posts {
+    list-style: none;
+    padding: 1em;
+}
+
+#newsbox img {
+    border: 0;
+    box-shadow: none;
+    max-width: 95%;
+}
+
+#newsbox a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#newsbox::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+#newsbox::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+#newsbox::-webkit-scrollbar-thumb {
+    background: #ff0055;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+#newsbox::-webkit-scrollbar-thumb:hover {
+    background: #ff0055;
+}
+#newsbox::-webkit-scrollbar-thumb:active {
+    background: #ff0055;
+}
+#newsbox::-webkit-scrollbar-track {
+    background: #000000;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+#newsbox::-webkit-scrollbar-track:hover {
+    background: #000000;
+}
+#newsbox::-webkit-scrollbar-track:active {
+    background: #000000;
+}
+#newsbox::-webkit-scrollbar-corner {
+    background: transparent;
+}
